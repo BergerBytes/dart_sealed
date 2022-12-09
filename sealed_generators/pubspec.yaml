@@ -10,9 +10,15 @@ environment:
 
 dependencies:
   # use fixed version dependency
-  sealed_annotations: '1.13.0'
+  sealed_annotations:
+    git:
+      url:  https://github.com/BergerBytes/dart_sealed.git
+      path: sealed_annotations
   # use fixed version dependency
-  sealed_writer: '1.13.0'
+  sealed_writer:
+    git:
+      url: https://github.com/BergerBytes/dart_sealed.git
+      path: sealed_writer
   build: any
   source_gen: any
   analyzer: any
